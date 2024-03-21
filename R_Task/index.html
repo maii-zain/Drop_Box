@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Background with Sidebar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Search for file, folder, shared storehouse">
+        </div>
+        <div class="drag-drop-container">
+            <input type="text" class="drag-drop-bar" placeholder="     Drag and drop files, folders or links">
+        </div>
+
+        <div>
+            <span class="icon">⚙️</span> <!-- Settings icon -->
+            <span class="icon">🔔</span> <!-- Notifications icon -->
+            <span class="user-icon">👤</span> <!-- User icon -->
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="sidebar">
+            <h2>Droppex</h2>
+            <img class="sidebar-icon"
+                src="imgs/Brown_and_White_New_Drop_Modern_Feminine_Instagram_Story-removebg-preview.png" />
+            <div class="add-folder">
+                <button>
+                    <img class="folder-icon" src="imgs/add_folder.png">
+                    New Folder
+                </button>
+            </div>
+
+            <ul>
+                <li>
+                    <div class="icon-link">
+                        <img src="imgs/home.png" class="active" alt="Home Icon">
+                        <a href="index.html" class="active">Home</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="icon-link">
+                        <img src="imgs/trash.png" alt="Trash Icon">
+                        <a href="#">Trash</a>
+                    </div>
+                </li>
+                <hr />
+                <li>
+                    <div class="icon-link">
+                        <img src="imgs/storage.png" alt="Storage Icon">
+                        <a href="#">Storage</a>
+                    </div>
+                    <div class="stor-container">
+                        <svg width="200" height="200">
+                            <!-- Circular progress bar -->
+                            <circle class="progress-circle progress-circle-background" cx="100" cy="100" r="80">
+                            </circle>
+                            <circle class="progress-circle progress-circle-foreground" cx="100" cy="100" r="80">
+                            </circle>
+
+                            <!-- Text label for completion percentage -->
+                            <text class="progress-text completion-text" x="100" y="110" text-anchor="middle">10%</text>
+                        </svg>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <header class="main-drive-header">
+                <h3 style="margin-left: 28px;">Ramy Main Drive</h3>
+                <hr>
+            </header>
+            <div class="select-message" style="margin-top: -30px;">
+                <p>Select folder or file to see options</p>
+                <div class="right-section">
+                    <p>No item selected</p>
+                    <i class="fa-solid fa-arrows-up-down"></i>
+                    <i class="fa-regular fa-hard-drive"></i>
+                    <i class="fa-sharp fa-regular fa-file-export"></i>
+                </div>
+            </div>
+            <table>
+                <tr>
+                    <th><input type="checkbox" class="styled-checkbox" id="file1" name="file1" value="file1"></th>
+                    <th>Name</th>
+                    <th>Uploaded</th>
+                    <th>Size</th>
+                    <th>View No.</th>
+                    <th>Last modified</th>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="styled-checkbox" id="file1" name="file1" value="file1"></td>
+                    <td><img src="imgs/fokder.png" /></td>
+                    <td>pdf File</td>
+                    <td>Jan 1, 2024 12:00AM</td>
+                    <td>2.5 MB</td>
+                    <td>10 times</td>
+                    <td>Jan 2, 2024 1:00PM</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="styled-checkbox" id="file1" name="file1" value="file1"></td>
+                    <td><img src="imgs/pdf.png" /></td>
+                    <td>pdf File</td>
+                    <td>Jan 1, 2024 12:00AM</td>
+                    <td>2.5 MB</td>
+                    <td>10 times</td>
+                    <td>Jan 2, 2024 1:00PM</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="styled-checkbox" id="file1" name="file1" value="file1"></td>
+                    <td><img src="imgs/sound.png" /></td>
+                    <td>Sound File</td>
+                    <td>Jan 1, 2024 12:00AM</td>
+                    <td>2.5 MB</td>
+                    <td>10 times</td>
+                    <td>Jan 2, 2024 1:00PM</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="styled-checkbox" id="file1" name="file1" value="file1"></td>
+                    <td><img src="imgs/fokder.png" /></td>
+                    <td>pdf File</td>
+                    <td>Jan 1, 2024 12:00AM</td>
+                    <td>2.5 MB</td>
+                    <td>10 times</td>
+                    <td>Jan 2, 2024 1:00PM</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="styled-checkbox" id="file1" name="file1" value="file1"></td>
+                    <td><img src="imgs/pdf.png" /></td>
+                    <td>pdf File</td>
+                    <td>Jan 1, 2024 12:00AM</td>
+                    <td>2.5 MB</td>
+                    <td>10 times</td>
+                    <td>Jan 2, 2024 1:00PM</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="styled-checkbox" id="file1" name="file1" value="file1"></td>
+                    <td><img src="imgs/sound.png" /></td>
+                    <td>Sound File</td>
+                    <td>Jan 1, 2024 12:00AM</td>
+                    <td>2.5 MB</td>
+                    <td>10 times</td>
+                    <td>Jan 2, 2024 1:00PM</td>
+                </tr>
+
+            </table>
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
